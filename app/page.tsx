@@ -54,7 +54,7 @@ export default function Home() {
               Fazer Pedido
             </Link>
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5519984213797"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-primary font-bold py-2 px-4 rounded-lg transition-colors duration-200 hover:bg-gray-100"
