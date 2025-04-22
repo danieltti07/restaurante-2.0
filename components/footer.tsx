@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 mt-0.5 text-primary" />
-                <span>Av. Exemplo, 123 - Bairro, Cidade - UF</span>
+                <span>Rua São Paulo 55, Jardim De Faveri </span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-2 text-primary" />

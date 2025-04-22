@@ -54,7 +54,7 @@ export default function SobrePage() {
                 <MapPin className="w-6 h-6 text-primary mr-3 mt-0.5" />
                 <div>
                   <h3 className="font-bold">Endereço</h3>
-                  <p>Av. Exemplo, 123 - Bairro, Cidade - UF</p>
+                  <p>Rua São Paulo 55, Jardim De Faveri</p>
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ export default function SobrePage() {
                 <Phone className="w-6 h-6 text-primary mr-3 mt-0.5" />
                 <div>
                   <h3 className="font-bold">Telefone</h3>
-                  <p>(11) 99999-9999</p>
+                  <p>(19) 98421-3797</p>
                 </div>
               </div>
 
@@ -70,7 +70,7 @@ export default function SobrePage() {
                 <Mail className="w-6 h-6 text-primary mr-3 mt-0.5" />
                 <div>
                   <h3 className="font-bold">E-mail</h3>
-                  <p>contato@seurestaurante.com</p>
+                  <p>danieltutui2018@gmail.com</p>
                 </div>
               </div>
 
