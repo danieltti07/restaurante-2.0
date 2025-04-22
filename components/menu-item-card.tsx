@@ -6,6 +6,16 @@ import { Plus, Minus } from "lucide-react"
 import { type MenuItem, useCart } from "@/context/cart-context"
 import { useCartAnimation } from "./cart-animation"
 
+// Função para normalizar o nome do arquivo
+function normalizeFileName(name: string): string {
+  return name
+    .toLowerCase() // Converte para minúsculas
+    .normalize("NFD") // Normaliza a string para decompor os caracteres acentuados
+    .replace(/[\u0300-\u036f]/g, "") // Remove os caracteres de acento
+    .replace(/\s+/g, "-") // Substitui os espaços por hífens
+    .replace(/[^\w\-]+/g, "") // Remove qualquer caractere não alfanumérico
+}
+
 interface MenuItemCardProps {
   item: MenuItem
 }
@@ -39,7 +49,16 @@ export default function MenuItemCard({ item }: MenuItemCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       <div className="relative h-48">
-        <Image src={item.image || "/placeholder.svg"} alt={item.name} fill className="object-cover" />
+        <Image
+          src={`/produtos/${normalizeFileName(item.name)}.jpg`} // Usando a função de normalização
+          alt={item.name}
+          fill
+          className="object-cover"
+          onError={(e) => {
+            // Se a imagem não for encontrada, usa uma imagem de fallback
+            e.currentTarget.src = "/placeholder.svg"
+          }}
+        />
       </div>
 
       <div className="p-4">

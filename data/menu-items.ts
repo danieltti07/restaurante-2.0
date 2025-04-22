@@ -7,7 +7,7 @@ export const menuItems: MenuItem[] = [
     name: "Marmita Tradicional",
     description: "Arroz, feijão, bife acebolado, salada e batata frita.",
     price: 18.9,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "produtos/marmita-tradicional.jpg",
     category: "Marmitas",
   },
   {
@@ -33,7 +33,7 @@ export const menuItems: MenuItem[] = [
     name: "Pizza Margherita",
     description: "Molho de tomate, mussarela, tomate e manjericão.",
     price: 39.9,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/produtos/pizza-margherita.jpg",
     category: "Pizzas",
   },
   {
